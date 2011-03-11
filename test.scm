@@ -9,9 +9,7 @@
     (cons el l1)
     (if (< el (car l1))
       (cons el l1)
-      (cons (car l1) (insert el (cdr l1)))
-    )
-  ))
+      (cons (car l1) (insert el (cdr l1))))))
 
 (define sort (l1) (foldl insert '() l1))
   
